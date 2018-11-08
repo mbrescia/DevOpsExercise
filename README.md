@@ -141,19 +141,6 @@ The application has Postgres and ElasticSearch datastores. ElasticSearch is used
 Both the front-end and back-end applications implement a `/ping` endpoint that can be used to see if they are up, such as for use in a load balancer.
 
 
-## Your Job
-
-The purpose of this exercise is to demonstrate how to setup the infrastructure in a deployed AWS environment using code. You can use whatever tools you want to do this (Chef, Puppet, Terraform, etc.). The system is setup to run locally using Docker as an example. You might use Docker as part of the way the application is deployed, but you don't have to.
-
-A few caveats for how the application should be deployed:
-
-* Frontend is publicly available
-* Backend Service is a microservice that is called by Frontend but is not publically accessible
-* ElasticSearch and the PostgreSQL database should not be publically accessible
-
-Don’t worry about fancy DNS for any parts of the application, accessing it via IP or Amazon DNS is fine. Feel free to use Amazon managed services (e.g. RDS).
-
-
 ## Purpose of the Exercise
 
 The purpose of the exercise is to understand how you approach the problem, the decisions you make in the infrastructure, and your ability to use code to accomplish things.
